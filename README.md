@@ -1,6 +1,15 @@
-# gatsby-plugin-intl
+# gatsby-plugin-react-intl
 
 Internationalize your Gatsby site.
+
+Fork from [https://github.com/wiziple/gatsby-plugin-intl](https://github.com/wiziple/gatsby-plugin-intl)
+
+Here are added features:
+
+- `ignoredPaths`: paths that you don't want to genereate locale pages, example: ["/dashboard/","/test/**"], string format is from micromatch https://github.com/micromatch/micromatch
+- `redirectDefaultLanguageToRoot`: option for use / as defaultLangauge root path. if your defaultLanguage is `ko`, when `redirectDefaultLanguageToRoot` is true, then it will not generate `/ko/xxx` pages, instead of `/xxx`
+
+The other feature just like [https://github.com/wiziple/gatsby-plugin-intl](https://github.com/wiziple/gatsby-plugin-intl)
 
 ## Features
 
@@ -36,7 +45,7 @@ _Feel free to send us PR to add your project._
 
 ### Install package
 
-`npm install --save gatsby-plugin-intl`
+`npm install --save gatsby-plugin-react-intl`
 
 ### Add a plugin to your gatsby-config.js
 
@@ -44,7 +53,7 @@ _Feel free to send us PR to add your project._
 // In your gatsby-config.js
 plugins: [
   {
-    resolve: `gatsby-plugin-intl`,
+    resolve: `gatsby-plugin-react-intl`,
     options: {
       // language JSON resource path
       path: `${__dirname}/src/intl`,
@@ -79,7 +88,7 @@ You can use `injectIntl` HOC on any react components including page components.
 
 ```jsx
 import React from "react"
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-react-intl"
 
 const IndexPage = ({ intl }) => {
   return (
@@ -99,7 +108,7 @@ Or you can use the new `useIntl` hook.
 
 ```jsx
 import React from "react"
-import { useIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
+import { useIntl, Link, FormattedMessage } from "gatsby-plugin-react-intl"
 
 const IndexPage = () => {
   const intl = useIntl()
@@ -143,7 +152,7 @@ If redirect option is `true`, `/` or `/page-2` will be redirected to the user's 
 
 To make it easy to handle i18n with multi-language url routes, the plugin provides several components.
 
-To use it, simply import it from `gatsby-plugin-intl`.
+To use it, simply import it from `gatsby-plugin-react-intl`.
 
 | Component           | Type      | Description                                                                                                                                                                  |
 | ------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
