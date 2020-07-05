@@ -90,12 +90,12 @@ export const changeLocale = (language, to) => {
     to || removeLocalePart(removePrefix(window.location.pathname))
   // TODO: check slash
   const isMatchedIgnoredPaths = isMatch(ignoredPaths, pathname)
-  const languageLink =
+  let languageLink =
     (redirectDefaultLanguageToRoot && defaultLanguage === language) ||
     isMatchedIgnoredPaths
       ? ""
-      : language
-  const link = `/${languageLink}${pathname}${window.location.search}`
+      : `/${language}`
+  const link = `${languageLink}${pathname}${window.location.search}`
   localStorage.setItem("gatsby-intl-language", language)
   gatsbyNavigate(link)
 }
