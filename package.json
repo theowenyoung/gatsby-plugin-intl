@@ -53,6 +53,6 @@
     "format": "prettier --write {src,__tests__}/**/*.{js,jsx}",
     "test": "jest",
     "clean": "rimraf *.js",
-    "release": "release-it"
+    "release": "yarn build && release-it"
   }
 }
