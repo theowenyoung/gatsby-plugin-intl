@@ -4874,10 +4874,10 @@ gatsby-plugin-page-creator@^3.0.0:
     globby "^11.0.2"
     lodash "^4.17.20"
 
-gatsby-plugin-react-intl@^3.0.0-0:
-  version "3.0.0-0"
-  resolved "https://registry.npmjs.org/gatsby-plugin-react-intl/-/gatsby-plugin-react-intl-3.0.0-0.tgz#c87edb5f2ee4642168473cf577e80fd8e25fc51b"
-  integrity sha512-aLNRwD+5xYeAgS+kRCDJEVk2DJ0QjMtxQlzBDOZsjjCTB+oXdmctBneSNvINqq5/+/ikVFoQ1l+4vpr1y/zfmQ==
+gatsby-plugin-react-intl@^3.0.0-1:
+  version "3.0.0-1"
+  resolved "https://registry.npmjs.org/gatsby-plugin-react-intl/-/gatsby-plugin-react-intl-3.0.0-1.tgz#37bcbf9a2061e2c3866d73b412485da60e8f2e49"
+  integrity sha512-/cO8/BiOHo2EI95fdoJ7k4C7cculnPI6YE3J/kwZsc3kvPq99+uQ5bT3+FlUJQv3NxFYnxN4v+1Qs6NO/x+T2A==
   dependencies:
     "@babel/runtime" "^7.13.9"
     "@formatjs/intl-pluralrules" "^4.0.11"

@@ -1,5 +1,9 @@
 # gatsby-plugin-react-intl
 
+> `gatsby-plugin-react-intl` has supported gatsby v3! Please upgrade `gatsby-plugin-react-intl` to `^3.0.0` to use it
+
+> For gatsby v2, please use `gatsby-plugin-react-intl@1.3.0`
+
 Internationalize your Gatsby site.
 
 Fork from [https://github.com/wiziple/gatsby-plugin-intl](https://github.com/wiziple/gatsby-plugin-intl)
