@@ -1,7 +1,7 @@
-const micromatch = require("micromatch")
+const picomatch = require("picomatch")
 
 function isMatch(patterns, currentPath) {
-  const isMatched = micromatch.isMatch(currentPath, patterns)
+  const isMatched = picomatch.isMatch(currentPath, patterns)
   return isMatched
 }
 exports.isMatch = isMatch

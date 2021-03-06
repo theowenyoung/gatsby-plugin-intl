@@ -1,5 +1,9 @@
 import React from "react"
-import { FormattedMessage, injectIntl, navigate } from "gatsby-plugin-intl"
+import {
+  FormattedMessage,
+  injectIntl,
+  navigate,
+} from "gatsby-plugin-react-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"

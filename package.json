@@ -7,25 +7,29 @@
     "url": "https://github.com/theowenyoung/gatsby-plugin-intl"
   },
   "dependencies": {
-    "@babel/runtime": "^7.8.4",
-    "@formatjs/intl-pluralrules": "^1.5.2",
-    "@formatjs/intl-relativetimeformat": "^4.5.9",
+    "@babel/runtime": "^7.13.9",
+    "@formatjs/intl-pluralrules": "^4.0.11",
+    "@formatjs/intl-relativetimeformat": "^8.1.2",
     "browser-lang": "^0.1.0",
     "intl": "^1.2.5",
-    "micromatch": "^4.0.2",
-    "react-intl": "^3.12.0"
+    "path-browserify": "^1.0.1",
+    "picomatch": "^2.2.2",
+    "process": "^0.11.10",
+    "prop-types": "^15.7.2",
+    "react-intl": "^5.13.2",
+    "util": "^0.12.3"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "babel-preset-gatsby-package": "^0.2.16",
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "babel-preset-gatsby-package": "^1.0.0",
     "cross-env": "^7.0.0",
-    "jest": "^25.1.0",
+    "jest": "^26.6.3",
     "prettier": "^1.19.1",
-    "react": "^16.13.1",
+    "react": "^17.0.1",
     "release-it": "^14.4.1",
     "rimraf": "^3.0.2",
-    "webpack": "^4.43.0"
+    "webpack": "^5.24.3"
   },
   "homepage": "https://github.com/theowenyoung/gatsby-plugin-intl",
   "keywords": [
@@ -39,7 +43,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "gatsby": "^2.0.0"
+    "gatsby": "^3.0.0"
   },
   "repository": "https://github.com/theowenyoung/gatsby-plugin-intl",
   "scripts": {
