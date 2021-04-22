@@ -52,6 +52,7 @@ export default ({ element, props }, pluginOptions) => {
     originalPath,
     redirectDefaultLanguageToRoot,
     ignoredPaths,
+    fallbackLanguage,
   } = intl
 
   if (typeof window !== "undefined") {
@@ -69,7 +70,7 @@ export default ({ element, props }, pluginOptions) => {
         window.localStorage.getItem("gatsby-intl-language") ||
         browserLang({
           languages,
-          fallback: language,
+          fallback: fallbackLanguage || language,
         })
 
       if (!languages.includes(detected)) {
