@@ -21,7 +21,7 @@ exports.onCreateWebpackConfig = ({ actions, plugins }, pluginOptions) => {
   if (!languages.includes(defaultLanguage)) {
     languages.push(defaultLanguage)
   }
-  const regex = new RegExp(languages.map(l => l.split("-")[0]).join("|"))
+  const regex = new RegExp("(" + languages.map(l => l.split("-")[0]).join("|") + ")$")
   actions.setWebpackConfig({
     resolve: { fallback: { path: require.resolve("path-browserify") } },
     plugins: [
